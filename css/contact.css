@@ -1,3 +1,96 @@
-body{
-    background-color: purple;
+:root{
+    --color-fonte-h3:goldenrod;
+    --colo-fonte-h4-p:#fff;
+    --color-button:goldenrod;
+    --color-input:#3c413f;
+    --color-background:#232826;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0d120e;
+}
+#container .center{
+    width: 800px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 1px 2px 10px black;
+    background-color: var(--color-background);
+}
+#container .center .left{
+    width: 230px;
+    height: 120px;
+    margin: 15px;
+    margin-left: 50px;
+    padding-left: 20px;
+    gap: 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c413f;
+    color: var(--colo-fonte-h4-p);
+}
+#container .center .left h4{
+   color: var(--color-fonte-h3);
+}
+#container .center .left p{
+     font-size: 15px;
+}
+#container .center form{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container .center form .right{
+    margin:13px ; 
+}
+#container .center form .right h3{
+    color:var(--color-fonte-h3);
+}
+#container .center form .right p{
+    font-weight: bolder;
+    font-size: 15px;
+    color: var(--colo-fonte-h4-p);
+}
+#container .center form .right input{
+    width: 450px;
+    height: 30px;
+    margin: 5px;
+    padding:15px;
+    border-radius: 4px;
+    color:var(--colo-fonte-h4-p);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: var(--color-input);
+}
+#container .center form .right input::[placeholder]{
+    color: var(--colo-fonte-h4-p);
+}
+#container .center form .right button{
+    width: 80px;
+    height: 30px;
+    margin-right:calc(450px - 80px) ;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color:white;
+    background-color: var(--color-button);
 }

@@ -1,18 +1,17 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../pages/assets/tree.jpg);
+}
+body{
+    background:#0d120e;
 }
 .container{
     height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;  
 }
 .container .img{
     width: 30%;
@@ -28,7 +27,8 @@ body{
     background-repeat: no-repeat;
 }
 .container .img .text{
-    color: white;
+    color: #fff;
+    font-weight: bolder;
     text-align: center;
 }
 .container .img .btn button{
@@ -36,10 +36,10 @@ body{
     height: 30px;
     border: none;
     border-radius: 30px;
-    color: #41436a;
+    color: #fff;
     font-size: 15px;
     font-weight:bold;
-    background-color: #ff9777bb;
+    background-color: rgba(218, 165, 32, 0.768);
 }
 .container form{
     width: 30%;
@@ -48,21 +48,22 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f5;
+    background-color: #232826;
 }
 .container form .title h1{
-    color: #41436a;
+    padding: 20px;
+    color: #fff;
     position: relative;
 }
 .container form .title h1::after{
     content: "";
     width: 50%;
     height: 4px;
-    top: 35px;
+    top: 55px;
     left: 0;
     border-radius: 10px;
     position:absolute;
-    background-color: #974063;
+    background-color: gold;
 }
 .container form .input{
     display: flex;
@@ -74,18 +75,21 @@ body{
 .container form .input label{
     display: block;
     font-weight: bold;
-    color: #41436a;
+    color: #fff;
+    padding: 3px;
 }
 .container form .input input{
     width: 300px;
-    height: 10px;
+    height: 35px;
     padding: 8px;
     border: none;
+    border-radius: 4px;
     outline-style: none;
+
     font-size: 17px;
-    color: #0c0c0f;
-    background-color: #f0f0f5;;
-    border-bottom: 2px solid gray;
+    color: #fff;
+    background-color: #3c413f;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 .container form  .input .btn button{
     width: 200px;
@@ -93,15 +97,15 @@ body{
     margin-top: 10px;
     border: none;
     cursor: pointer;
-    background-color: #f54768;
+    background-color: goldenrod;
     font-weight: bold;
     font-size: 15px;
-    color: #41436a;
-    border-radius: 30px;
+    color: #fff;
+    border-radius: 4px;
 }
 .container form  .input .text p{
     font-weight: bold;
-    color: #41436a;
+    color: #fff;
 
 }
 .container form .social-media{
@@ -109,6 +113,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius:50% ;
+   
+}
+.container form .social-media .social{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #fff;
 }
 @media screen and (max-width:600px){
     body{
